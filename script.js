@@ -1,14 +1,14 @@
 document.addEventListener("DOMContentLoaded", function() {
   var memeForm = document.getElementById("meme-form");
-  var listGallery = document.querySelector(".gallery");
+  var listGallery = document.querySelector(".meme-gallery-container .gallery"); // Updated selector
   memeForm.addEventListener("submit", function(event) {
     event.preventDefault();
     var memeli = document.createElement("li");
-    memeli.classList.add("meme-gallery-item"); // Updated class name
+    memeli.classList.add("meme-gallery-item");
     var topText = document.getElementById("Upper-Text");
-    var URLInput = document.getElementById("link-to-pic").value,
-      src = URLInput,
-      img = document.createElement("img");
+    var URLInput = document.getElementById("link-to-pic").value;
+    var src = URLInput;
+    var img = document.createElement("img");
     img.src = src;
     img.width = 500;
     var topTextDiv = document.createElement("div");
