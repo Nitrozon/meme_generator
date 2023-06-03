@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet">
+    <title>Meme Generator</title>
+</head>
+<body>
+    <div class="background-blue">
+        <header class="container-fluid">
+            <div class="container mx-auto text-center mb-5 title text-primary">
+                <h1 class="text-info">
+                    Meme Generator
+                </h1>
+                <h2>Stupid, Fast, Simple, Meme Generator.</h2>
+            </div>
+            <section class="container">
+                <form id="meme-form">
+                    <div class="group-form row mb-5">
+                        <input type="url" id="link-to-pic" class="form-control" placeholder="Insert URL">
+                        <label for="link-to-pic" class="col-md-2 col-form-label"></label>
+                    </div>
+                    <div class="group-form row mb-5">
+                        <input type="text" id="Upper-Text" class="form-control" placeholder="Insert Upper Text">
+                        <label for="Upper-Text" class="col-md-2 col-form-label"></label>
+                    </div>
+                    <div class="group-form row mb-5">
+                        <input type="text" id="Bottom-Text" class="form-control" placeholder="Insert Bottom Text">
+                        <label for="Bottom-Text" class="col-md-2 col-form-label"></label>
+                    </div>
+                    <div class="group-form row mb-5">
+                        <div class="col-md-2">
+                            <input type="submit" class="btn btn-success" value="Generate Your Meme!">
+                        </div>
+                    </div>
+                </form>
+            </section>
+            <section class="meme-gallery">
+                <ul class="gallery"></ul>
+            </section>
+            <footer class="footer">
+                <div class="container-fluid-footer">
+                    <p>Meme generator (still not done....)</p>
+                </div>
+            </footer>
+        </header>
+    </div>
+
+<script src="script.js"></script>
+</body>
+</html>
